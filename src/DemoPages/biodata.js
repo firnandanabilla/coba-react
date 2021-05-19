@@ -22,7 +22,12 @@ import TabContent from "rc-tabs/lib/SwipeableTabContent";
 import FormsDefault from "./Forms/Elements/Controls/Examples/FormBasic";
 import InputGroups from "./Forms/Elements/Controls/Examples/InputGroup/InputGroups";
 
+function NamaLabel(props){
+    return <label>{props.name}</label>;
+}
+
 class BiodataBella extends Component{
+
     render() {
         return(
             <Fragment>
@@ -41,22 +46,22 @@ class BiodataBella extends Component{
                                         <CardTitle>Biodata</CardTitle>
                                         <Form>
                                             <FormGroup>
-                                                <Label for="exampleName">Name :</Label>
+                                                <NamaLabel name="Namaa :"/>
                                                 <Input type="name" name="name" id="exampleName"
                                                        placeholder="Name placeholder"/>
                                             </FormGroup>
                                             <FormGroup>
-                                                <Label for="exampleContactNumber">Contact Number :</Label>
+                                                <NamaLabel name="Contact Number :"/>
                                                 <Input type="contactNumber" name="contact" id="contact"
                                                        placeholder="Contact Number placeholder"/>
                                             </FormGroup>
                                             <FormGroup>
-                                                <Label for="exampleEmail">Email :</Label>
+                                                <NamaLabel name="Email :"/>
                                                 <Input type="email" name="email" id="email"
                                                        placeholder="Email placeholder"/>
                                             </FormGroup>
                                             <FormGroup>
-                                                <Label>Gender :</Label>
+                                                <NamaLabel name="Gender :"/>
                                                 <div>
                                                     <CustomInput type="radio" id="male" name="male"
                                                                  label="Male"/>
@@ -65,7 +70,7 @@ class BiodataBella extends Component{
                                                 </div>
                                             </FormGroup>
                                             <FormGroup>
-                                                <Label for="exampleTTL">Date of Birth :</Label>
+                                                <NamaLabel name="Date of Birth :"/>
                                                 <Input type="date" name="ttl" id="ttl"/>
                                             </FormGroup>
                                             <FormGroup>
@@ -74,7 +79,7 @@ class BiodataBella extends Component{
                                                        placeholder="Address placeholder"/>
                                             </FormGroup>
                                             <FormGroup>
-                                                <Label for="exampleSelect">Religion</Label>
+                                                <NamaLabel name="Religion :"/>
                                                 <CustomInput type="select" name="select" id="exampleSelect">
                                                     <option value="">Select</option>
                                                     <option>Islam</option>
