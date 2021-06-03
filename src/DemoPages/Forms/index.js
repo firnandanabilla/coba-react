@@ -8,6 +8,7 @@ import FormElementsControls from "./Elements/Controls/";
 import FormElementsValidation from "./Elements/Validation/";
 
 import ContohBiodata from "../biodata.js";
+import CobaDropOff from "../dropoff.js";
 
 import FormWizardVar1 from './Elements/Wizard/Examples/Variation1';
 import FormWizardVar2 from './Elements/Wizard/Examples/Variation2';
@@ -57,7 +58,9 @@ const Forms = ({match}) => (
                     <Route path={`${match.url}/wizard-2`} component={FormWizardVar2}/>
                     <Route path={`${match.url}/wizard-3`} component={FormWizardVar3}/>
                     <Route path={`${match.url}/sticky-headers`} component={FormElementsSticky}/>
+
                     <Route path={`${match.url}/biodata-bella`} component={ContohBiodata}/>
+                    <Route path={`${match.url}/coba-dropoff`} component={CobaDropOff}/>
 
 
                     {/* Form Components */}

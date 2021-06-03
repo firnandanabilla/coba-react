@@ -16,11 +16,32 @@ const Components = lazy(() => import('../../DemoPages/Components'));
 const Charts = lazy(() => import('../../DemoPages/Charts'));
 const Forms = lazy(() => import('../../DemoPages/Forms'));
 const Tables = lazy(() => import('../../DemoPages/Tables'));
+// const Panduan = lazy(() => import('../../DemoPages/Panduan'));
+
 
 const AppMain = () => {
 
     return (
         <Fragment>
+
+            {/*/!* Panduan *!/*/}
+
+            {/*<Suspense fallback={*/}
+            {/*    <div className="loader-container">*/}
+            {/*        <div className="loader-container-inner">*/}
+            {/*            <div className="text-center">*/}
+            {/*                <Loader type="ball-pulse-rise"/>*/}
+            {/*            </div>*/}
+            {/*            <h6 className="mt-5">*/}
+            {/*                Please wait while we load all the Components examples*/}
+            {/*                <small>Because this is a demonstration we load at once all the Components examples. This wouldn't happen in a real live app!</small>*/}
+            {/*            </h6>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*}>*/}
+            {/*    <Route path="/panduan" component={Panduan}/>*/}
+            {/*</Suspense>*/}
+
 
             {/* Components */}
 
@@ -186,7 +207,7 @@ const AppMain = () => {
 
             <Route exact path="/" render={() => (
                 // <Redirect to="/dashboards/crm"/>
-                <Redirect to="/forms/biodata-bella"/>
+                <Redirect to="/forms/coba-dropoff"/>
             )}/>
             <ToastContainer/>
         </Fragment>
